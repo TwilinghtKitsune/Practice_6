@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm("Task_1", "Home", FormMethod.Post))
+    {
+        <input name="button" type="submit" value="Перейти на несуществующую страницу" />
+        <br><br>
+    }
+
+    @using (Html.BeginForm("View_with_layout1", "Home", FormMethod.Post))
+    {
+        <input name="button" type="submit" value="Страница с двумя переопределёнными" />
+        <br><br>
+    }
+
+    @using (Html.BeginForm("View_with_layout2", "Home", FormMethod.Post))
+    {
+        <input name="button" type="submit" value="Страница с одним переопределённым" />
+    }
+</body>
+</html>
+
+
+

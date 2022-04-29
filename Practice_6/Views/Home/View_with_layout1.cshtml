@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_SiteTemplate.cshtml";
+}
+@section Footer1{
+    Этот переопределён
+}
+@section Footer2{
+    И этот тоже переопределён
+}
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    <input name="button" type="submit" value="На главную" />
+    <br><br>
+}
+
+@using (Html.BeginForm("View_with_layout2", "Home", FormMethod.Post))
+{
+    <input name="button" type="submit" value="Страница с одним переопределённым" />
+}

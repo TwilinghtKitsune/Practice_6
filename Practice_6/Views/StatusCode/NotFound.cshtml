@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" href="~/Content/Style404.css">
+</head>
+<body>
+    <p id="h404">404</p>
+    <p id="pFotTxt">Страница не найдена</h>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+    {
+        <br><br><br>
+        <input name="button" type="submit" value="На главную" />
+    }
+</body>
+</html>
+

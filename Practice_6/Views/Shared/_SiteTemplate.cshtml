@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <footer id="footer1">
+            @if (IsSectionDefined("Footer1"))
+            {
+                @RenderSection("Footer1")
+            }
+            else
+            {
+                <span>Содержание элемента footer по умолчанию.</span>
+            }
+        </footer>
+        <br><br><br>
+        <footer id="footer2">
+            @RenderSection("Footer2", false)
+        </footer>
+        <br>
+        @RenderBody()
+    </div>
+</body>
+</html>
